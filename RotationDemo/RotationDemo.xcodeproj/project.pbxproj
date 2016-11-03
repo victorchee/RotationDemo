@@ -13,6 +13,9 @@
 		1F1365D41DCAC6C6006F9D19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F1365D21DCAC6C6006F9D19 /* Main.storyboard */; };
 		1F1365D61DCAC6C6006F9D19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F1365D51DCAC6C6006F9D19 /* Assets.xcassets */; };
 		1F1365D91DCAC6C6006F9D19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F1365D71DCAC6C6006F9D19 /* LaunchScreen.storyboard */; };
+		1F1365E11DCAC73D006F9D19 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1365E01DCAC73D006F9D19 /* BaseTabBarController.swift */; };
+		1F1365E51DCAC7B4006F9D19 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1365E41DCAC7B4006F9D19 /* BaseNavigationController.swift */; };
+		1F1365E71DCAC7C9006F9D19 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1365E61DCAC7C9006F9D19 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		1F1365D51DCAC6C6006F9D19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F1365D81DCAC6C6006F9D19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F1365DA1DCAC6C6006F9D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F1365E01DCAC73D006F9D19 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		1F1365E41DCAC7B4006F9D19 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		1F1365E61DCAC7C9006F9D19 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				1F1365CC1DCAC6C6006F9D19 /* AppDelegate.swift */,
+				1F1365E01DCAC73D006F9D19 /* BaseTabBarController.swift */,
+				1F1365E41DCAC7B4006F9D19 /* BaseNavigationController.swift */,
+				1F1365E61DCAC7C9006F9D19 /* BaseViewController.swift */,
 				1F1365CE1DCAC6C6006F9D19 /* FirstViewController.swift */,
 				1F1365D01DCAC6C6006F9D19 /* SecondViewController.swift */,
 				1F1365D21DCAC6C6006F9D19 /* Main.storyboard */,
@@ -139,9 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F1365E11DCAC73D006F9D19 /* BaseTabBarController.swift in Sources */,
 				1F1365D11DCAC6C6006F9D19 /* SecondViewController.swift in Sources */,
 				1F1365CD1DCAC6C6006F9D19 /* AppDelegate.swift in Sources */,
+				1F1365E51DCAC7B4006F9D19 /* BaseNavigationController.swift in Sources */,
 				1F1365CF1DCAC6C6006F9D19 /* FirstViewController.swift in Sources */,
+				1F1365E71DCAC7C9006F9D19 /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +276,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RotationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.RotationDemo;
@@ -276,6 +290,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RotationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.victorchee.RotationDemo;

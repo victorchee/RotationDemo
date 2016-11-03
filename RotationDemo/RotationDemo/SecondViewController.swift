@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,16 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    override var shouldAutorotate: Bool {
+        get {
+            return true
+        }
+    }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        get {
+            return .all
+        }
+    }
 }
 
